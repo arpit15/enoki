@@ -139,7 +139,17 @@ using Complex24fC = Complex<Vector4fC>;
 using Complex24dC = Complex<Vector4dC>;
 #endif
 
-#if defined(ENOKI_AUTODIFF)
+// #if defined(ENOKI_AUTODIFF)
+// using Float32D = DiffArray<Float32X>;
+// using Float64D = DiffArray<Float64X>;
+// using Int32D   = DiffArray<Int32X>;
+// using Int64D   = DiffArray<Int64X>;
+// using UInt32D  = DiffArray<UInt32X>;
+// using UInt64D  = DiffArray<UInt64X>;
+// using MaskD    = mask_t<Float32D>;
+// #endif
+
+#if defined(ENOKI_AUTODIFF) && defined(ENOKI_CUDA)
 using Float32D = DiffArray<Float32C>;
 using Float64D = DiffArray<Float64C>;
 using Int32D   = DiffArray<Int32C>;

@@ -1225,6 +1225,9 @@ template struct ENOKI_EXPORT DiffArray<float>;
 template struct ENOKI_EXPORT Tape<double>;
 template struct ENOKI_EXPORT DiffArray<double>;
 
+template struct ENOKI_EXPORT Tape<Packet<float>>;
+template struct ENOKI_EXPORT DiffArray<Packet<float>>;
+
 template struct ENOKI_EXPORT Tape<DynamicArray<Packet<float>>>;
 template struct ENOKI_EXPORT DiffArray<DynamicArray<Packet<float>>>;
 
